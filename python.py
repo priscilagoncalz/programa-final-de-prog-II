@@ -3,7 +3,6 @@ jogo quiz imersivo
 
 # IMPORTAÇÃO DE BIBLIOTECAS
 
-
 import pygame  
 # Biblioteca principal para criação de jogos em Python.
 # Fornece recursos para gráficos, sons, eventos e janelas.
