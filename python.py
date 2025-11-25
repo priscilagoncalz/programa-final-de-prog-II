@@ -1,29 +1,32 @@
-# programa-final-de-prog-II
-jogo quiz imersivo
+'''Trabalho final de conclusão de curso da disciplina XCP246 - Programação II
+Universidade Federal do Rio de Janeiro, campus Professor Geraldo Cidade - Duque de Caxias
+Discentes: Hyngrid Ribeiro de Oliveira e Priscila Souza Thomé Gonçalves
+O software desenvolvido foi um jogo, no estilo de quiz imersivo, denominado "Verbalândia".
+'''
 
 # IMPORTAÇÃO DE BIBLIOTECAS
 
 import pygame  
-# Biblioteca principal para criação de jogos em Python.
-# Fornece recursos para gráficos, sons, eventos e janelas.
+'''Biblioteca principal para criação de jogos em Python.
+Fornece recursos para gráficos, sons, eventos e janelas.'''
 
 from pyvidplayer2 import Video  
-# Biblioteca secundária utilizada para reproduzir vídeos dentro de janelas Pygame.
-# Permite inserir cenas narrativas ou cutscenes no jogo.
+'''Biblioteca secundária utilizada para reproduzir vídeos dentro de janelas Pygame.
+Permite inserir cenas narrativas ou cutscenes no jogo.'''
 
 import os  
-# Biblioteca padrão do Python que fornece funções de interação
-# com o sistema operacional, como manipulação de diretórios,
-# caminhos de arquivos e variáveis de ambiente.
+'''Biblioteca padrão do Python que fornece funções de interação
+com o sistema operacional, como manipulação de diretórios,
+caminhos de arquivos e variáveis de ambiente.'''
 
 import sys  
-# Módulo que permite acessar funções e variáveis internas do
-# interpretador Python, como parâmetros passados pela linha de
-# comando e finalização controlada do programa.
+'''Módulo que permite acessar funções e variáveis internas do
+interpretador Python, como parâmetros passados pela linha de
+comando e finalização controlada do programa.'''
 
 import random  
-# Biblioteca de geração de números aleatórios, usada para
-# criar variações dinâmicas no jogo (ex.: escolhas, sorteios).
+'''Biblioteca de geração de números aleatórios, usada para
+criar variações dinâmicas no jogo (ex.: escolhas, sorteios).'''
 
 
 
@@ -53,9 +56,9 @@ VERDE = (0, 200, 0)             # Verde: geralmente usado para mensagens positiv
 VERMELHO = (200, 0, 0)          # Vermelho: utilizado para erros, alertas ou feedback negativo.
 
 # CLASSE: LetraFlutuante
-# Representa uma letra decorativa que se move suavemente pela
-# tela, criando um efeito de partículas mágicas no plano de fundo.
-# É usada apenas para estética e ambientação do jogo.
+'''Representa uma letra decorativa que se move suavemente pela
+tela, criando um efeito de partículas mágicas no plano de fundo.
+É usada apenas para estética e ambientação do jogo. '''
 
 class LetraFlutuante:
     """
